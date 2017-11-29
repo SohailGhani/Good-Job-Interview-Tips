@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.teknords.goodjobinterviewtips.MainActivity"
+    android:background="@drawable/mainbg">
+
+
+    <ListView
+
+        android:textSize="2dp"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:id="@+id/listView"
+        android:background="#149a9a"
+        android:divider="#f7fbfb"
+        android:textColor="#5d7fde"
+        android:dividerHeight="2.0sp"
+        android:scrollbars="none"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
+
+
+
+
